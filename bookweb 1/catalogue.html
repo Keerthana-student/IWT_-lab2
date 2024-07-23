@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalogue</title>
+    <style>
+        body {
+            font-family: Book Antiqua;
+            background-image: url('b4.jpg');
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #725633;
+        }
+        th, td {
+            font-size: large;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #d29c5e;
+            color: rgb(4, 4, 4);
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+        .add-to-cart {
+            background-color:#725633;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .add-to-cart:hover {
+            background-color: #daa66a;
+        }
+    </style>
+</head>
+<body>
+
+<h1>BOOK CATALOGUE</h1>
+
+<table>
+    <tr><b>
+        <th>Cover Page</th>
+        <th>Author Name</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Add to Cart</th></b>
+    </tr>
+    <tr>
+        <td><img src="b1.jpg" alt="Book 1"></td>
+        <td><b>Sun Tzu</b></td>
+        <td><b>The Art of War</b</td>
+        <td><b>$180.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+    <tr>
+        <td><img src="b2.jpg" alt="Book 2"></td>
+        <td><b>Joseph Nguzen</b></td>
+        <td><b>Don't Believe Everything You Think</b></td>
+        <td><b>$110.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+    <tr>
+        <td><img src="cs1.jpg" alt="Book 3"></td>
+        <td><b>Sukumar Gosh</b></td>
+        <td><b>Distributed Systems</b></td>
+        <td><b>$85.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+
+    <tr>
+        <td><img src="cs2.jpg" alt="Book 3"></td>
+        <td><b> George S. Tselikis</b></td>
+        <td><b>Introduction to C++</b></td>
+        <td><b>$859.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+
+
+    <tr>
+        <td><img src="cs3.jpg" alt="Book 1"></td>
+        <td><b>Reema Thareja</b></td>
+        <td><b>Computer Fundamentals and Programming in C</b> </td>
+        <td><b>$990.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+    
+    <tr>
+        <td><img src="ece1.jpg" alt="Book 2"></td>
+        <td><b> Adel S. Sedra and Kenneth C. Smith</b></td>
+        <td><b>Microelectronic Circuits</b> </td>
+        <td><b>$129.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+    
+    
+    <tr>
+        <td><img src="ece2.jpg" alt="Book 2"></td>
+        <td><b>Jonathan P. Dowling</b></td>
+        <td><b>Race to Build the Quantum Internet</b> </td>
+        <td><b>$120.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+    <tr>
+        <td><img src="ecce3.jpg" alt="Book 2"></td>
+        <td><b> Gunther Lehner</b></td>
+        <td><b>Electromagnetic Field Theory for Engineers and Physicists</b> </td>
+        <td><b>$199.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+
+
+    <tr>
+        <td><img src="eee1.jpg" alt="Book 2"></td>
+        <td><b>  Johan H. Huijsing</b></td>
+        <td><b>Analog Electronics </b> </td>
+        <td><b>$179.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+   
+    <tr>
+        <td><img src="eee2.jpg" alt="Book 2"></td>
+        <td><b> Saurabh Jain</b></td>
+        <td><b>Adaptive Digital Circuits for Power-Performance Range beyond Wide Voltage Scaling </b> </td>
+        <td><b>$1499.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+   
+    <tr>
+        <td><img src="eee3.jpg" alt="Book 2"></td>
+        <td><b> Thomas F. Schubert</b></td>
+        <td><b>Fundamentals of Electronics </b> </td>
+        <td><b>$199.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+   
+    
+    <tr>
+        <td><img src="civil1.jpg" alt="Book 3"></td>
+        <td><b>   Jorge Angeles</b></td>
+        <td><b>Fundamentals of Robotic Mechanical Systems</b> </td>
+        <td><b>$899.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+
+    <tr>
+        <td><img src="civil2.jpg" alt="Book 3"></td>
+        <td><b> V.P. Kumar</b></td>
+        <td><b>Engineering Graphics</b> </td>
+        <td><b>$800.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+
+    <tr>
+        <td><img src="civil3.jpg" alt="Book 3"></td>
+        <td><b> Dr. R.K. Bansal</b></td>
+        <td><b>Fluid Mechanics </b> </td>
+        <td><b>$799.00</b></td>
+        <td><button class="add-to-cart">Add to Cart</button></td>
+    </tr>
+
+    <!-- Add more rows as needed -->
+</table>
+
+</body>
+</html>

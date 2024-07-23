@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #6f4f28; /* Darker brown background */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better appearance */
+            overflow: hidden; /* Hide any overflow to prevent scrollbar */
+            white-space: nowrap; /* Prevents wrapping of navbar items */
+            height: 100%; /* Ensure the navbar occupies the full height of the frame */
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px; /* Padding for a better look */
+            border-radius: 25px; /* Rounded buttons */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            display: inline-block; /* Ensure buttons are aligned correctly */
+        }
+        .navbar a:hover {
+            background-color: #8b6741; /* Lighter brown for hover effect */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html" target="_top">HOME</a>
+        <a href="login.html" target="content">LOGIN</a>
+        <a href="register.html" target="content">REGISTER</a>
+        <a href="catalogue.html" target="content">CATALOGUE</a>
+        <a href="cart.html" target="content">CART</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        font-family: "poppins", sans-serif;
+      }
+      body {
+        background-image: url('b3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+      }
+      .container {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px 0 15px;
+      }
+      span {
+        color: #73401a;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+      }
+      header {
+        color:#73401a;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+        font-family: Imprint MT Shadow;
+      }
+      .input-field {
+        display: flex;
+        flex-direction: column;
+      }
+      .input {
+        height: 45px;
+        width: 87%;
+        border: none;
+        border-radius: 30px;
+        color:#73401a;
+        font-size: 15px;
+        padding: 0 0 0 45px;
+        background: rgba(255, 255, 255, 0.1);
+        outline: none;
+        font-family: Book Antiqua;
+      }
+      i {
+        position: relative;
+        top: -31px;
+        left: 17px;
+        color: #73401a;
+      }
+      ::-webkit-input-placeholder {
+        color:#73401a;
+      }
+      .submit {
+        border: none;
+        border-radius: 30px;
+        font-size: 15px;
+        height: 45px;
+        outline: none;
+        width: 100%;
+        color: black;
+        background:   #a37d4a;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .submit:hover {
+        box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+      }
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: small;
+        color: #f8e9e9;
+        margin-top: 10px;
+      }
+      .left {
+        display: flex;
+      }
+      label a {
+        text-decoration: none;
+        color: #e8e7f1;
+      }
+    </style>
+    <title>Ludiflex | login</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="top-header">
+          <span> Have an account?</span>
+          <header>Login</header>
+        </div>
+        <form action="/submit-login" method="post">
+          <div class="input-field">
+            <input
+              type="text"
+              class="input"
+              placeholder="Username"
+              required
+              name="user"
+            />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              class="input"
+              placeholder="password"
+              name="password"
+              required
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="input-field">
+            <input type="submit" class="submit" value="login" required />
+          </div>
+        </form>
+       
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

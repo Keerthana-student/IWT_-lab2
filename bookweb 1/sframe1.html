@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #6f4f28; /* Darker brown background */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better appearance */
+            overflow: hidden; /* Hide any overflow to prevent scrollbar */
+            white-space: nowrap; /* Prevents wrapping of navbar items */
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px; /* Padding for a better look */
+            border-radius: 25px; /* Rounded buttons */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            display: inline-block; /* Ensure buttons are aligned correctly */
+        }
+        .navbar a:hover {
+            background-color: #825524; /* Lighter brown for hover effect */
+            color: white;
+        }
+        .content-frame {
+            width: 100%;
+            height: calc(100vh - 50px); /* Adjust height to fit remaining viewport height */
+            border: none;
+            margin: 0;
+            display: block; /* Ensure iframe occupies the full width */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home1.html" target="content">Home</a>
+        <a href="login.html" target="content">Login</a>
+        <a href="register.html" target="content">Register</a>
+        <a href="catalogue.html" target="content">Catalogue</a>
+        <a href="cart.html" target="content">Cart</a>
+    </div>
+    <iframe name="content" class="content-frame"></iframe>
+</body>
+</html>

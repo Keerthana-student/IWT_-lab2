@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        /* Ensuring the frameset does not allow resizing */
+        frameset {
+            border: none;
+        }
+    </style>
+</head>
+<frameset rows="15%,*" frameborder="no">
+    <frame src="webname.html" name="webname" scrolling="no">
+    <frameset rows="7%,*" frameborder="no">
+        <frame src="sframe.html" name="navbar" scrolling="no">
+        <frameset cols="250px,*" frameborder="no"> <!-- Adjusted width to 250px -->
+            <frame src="left.html" name="left" scrolling="no">
+            <frame src="content.html" name="content">
+        </frameset>
+    </frameset>
+</frameset>
+</html>
